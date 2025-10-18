@@ -241,31 +241,6 @@ poetry run uvicorn app.main:app --reload
 docker-compose up
 ```
 
-## Testing
-
-### Test Framework
-
-The project is configured with pytest for testing:
-
-```bash
-# Run tests locally
-poetry run pytest
-
-# Run tests with coverage
-poetry run pytest --cov=app
-
-# Run tests in Docker
-docker-compose exec api pytest
-```
-
-### Testing Checklist
-
-- [ ] Drone registration validation
-- [ ] Weight limit enforcement
-- [ ] Battery level checks
-- [ ] State transition logic
-- [ ] Medication loading/unloading
-- [ ] API endpoint responses
 
 ## Troubleshooting
 
